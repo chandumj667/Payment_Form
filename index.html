@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment-Form</title>
+</head>
+<body>
+    <div class="total">
+        <h1 class="title">Payment Form</h1>
+        <form>
+            <h3 class="sub-heading">Person Details</h3>
+            <div class="details">
+                <p class="sec">Name: <input type="text" placeholder="Enter Your Full Name"></p>
+                <fieldset class="sec short">
+                    <legend>Gender</legend>
+                    <p><input type="radio" name="gender">Male</p>
+                    <p><input type="radio" name="gender">Female</p>
+                </fieldset>
+                <p>Address: <textarea name="txt-area" id="" cols="49" rows="3" placeholder="Enter your address"></textarea></p>
+                <p class="sec">Email:<input type="email" name="mail" placeholder="Enter Your Email"></p>
+                <p class="sec">Password:<input type="password" name="password" placeholder="Enter Your Password"></p>
+            </div>
+        </form>
+        <h3 class="sub-heading">Payment Details</h3>
+        <form>
+            <div class="details">
+                <p class="sec">Card Type: 
+                    <select name="card-type" id="card">
+                        <option value="enter">Enter Your Card Type</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Master">Master</option>
+                        <option value="Ru-pay">Ru-pay</option>
+                        <option value="BHIM-UPI">BHIM-UPI</option>
+                    </select>
+                </p>
+                <p class="sec">Card Number:<input type="text" placeholder="Enter Card type">
+                </p>
+                <p class="sec">Expiration Date: <input type="date" placeholder="Enter card expiration date"></p>
+                <p class="sec">CVV: <input type="password" placeholder="Enter card CVV number"></p>
+            </div>
+        </form>
+        <button class="btn">Pay Now</button>
+    </div>
+</body>
+</html>
